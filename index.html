@@ -9,936 +9,244 @@
     <meta name="keywords" content="IDB,Civil Society,Engagement">
     <meta name="author" content="Viviane Espinoza">
 
-    <meta property="og:title" content="IDB Group - Civil Society Engagement Review 2016-2017 by Viespinoza" />
-    <meta property="og:description" content="This publication highlights the work that the different IDB Group's sectors, departments, divisions and units conduct with Civil Society through five levels of engagement: information, dialogue, consultation, collaboration and partnerships. This is the second review that the IDB Group undertakes on engagement actions with civil society in 26 countries of Latin American and the Caribbean. This review constitutes both a natural and indispensable step to better understand the work led by the Bank and, at the same time, provide the first database needed for our future endeavors."/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wiconnect3.iadb.org//" />
-    <meta property="og:image" content="https://wiconnect3.iadb.org/wp-content/uploads/2017/08/Screen-Shot-2017-08-19-at-14.16.46-240x300.png/>
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@viespinoza2">
-    <meta name="twitter:creator" content="@viespinoza2">
-    <meta name="twitter:title" content="IDB Group - Civil Society Engagement Review 2016-2017 by Viespinoza">
-    <meta name="twitter:description" content="What is the state of developer skills today? How can developers best keep their skills current? What are the most in-demand skills?
-    Find out in the HackerRank’s 2018 Developer Skills Report. Insights are based on more than 39,000 developers.">
-    <meta name="twitter:image" content="https://research.hackerrank.com/developer-skills/2018/style/share-image-twitter-2.jpg">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     
     <!--Link to CSS here-->
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="style/hackerrank-favicon.png">
-    <script src="style/jquery-1.11.3.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-    </style>
+    
+    <!--Link to D3 here-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js"></script>
+
+    <!--Link to C3 here-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.2/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.5.2/c3.css" rel="stylesheet" type="text/css">
+
 </head>
 
-<body>
+<body id="BodyBack">
     <div id="fxd">
-        <ul class="pagination">
-            <li><a href="#contents" class="scroll selected" title="Scroll to the start of the report"><span>Contents</span></a></li>
-            <li><a href="#insight1" class="scroll" title="Scroll to Learning & Education section"><span>Learning &amp; Education</span></a></li>
-            <li><a href="#insight2" class="scroll" title="Scroll to In-Demand Skills section"><span>In-Demand Skills</span></a></li>
-            <li><a href="#insight3" class="scroll" title="Scroll to In-Demand Qualifications section"><span>In-Demand Qualifications</span></a></li>
-            <li><a href="#insight4" class="scroll" title="Scroll to Developer Tools at Work section"><span>Developer Tools at Work</span></a></li>
-            <li><a href="#insight5" class="scroll" title="Scroll to Insight5 section"><span>Talent Attraction</span></a></li>
-            <li><a href="#insight6" class="scroll" title="Scroll to Just FYI section"><span>Just FYI</span></a></li>
-            <li><a href="#insight7" class="scroll" title="Scroll to Appendix section"><span>Appendix</span></a></li>
-
-            <li class="twitter"><a href="http://twitter.com/share?text=The @HackerRank’s 2018 Developer Skills Report with nearly 39,000 responses is out&url=https://research.hackerrank.com/developer-skills/2018&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet about the Developer Skills Report" target="_blank"><span>Tweet</span></a></li>
-
-            <li class="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/&title=HackerRank’s%202018%20Developer%20Skills%20Report
-      &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills?%20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20nearly%2039,000%20responses.
-      &source=HackerRank.com" title="Share the 2018 Developer Skills Report on Linkedin" target="_blank"><span>Share</span></a></li>
-
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/" title="Share the Developer Skills Report on Facebook" target="_blank"><span>Like</span></a></li>
-
-            <li class="podcast"><a href="https://radio.hackerrank.com" title="Listen to HackerRank Radio" target="_blank"><span>Listen</span></a></li>
-
-
-
-        </ul>
-        <a class="logo" href="https://www.hackerrank.com" title="Visit HackerRank.com">
-            <h4>HackerRank</h4>
+        <a class="logo" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&locale-attribute=es&" title="Download the Review 2016-2017">
+            <h4>Download the Review</h4>
         </a>
     </div>
 
     <div class="section" id="home">
-        <a class="logo" href="https://www.hackerrank.com" title="Visit HackerRank.com"><span>HackerRank</span></a>
-        <h1><em></em>2018 Developer Skills Report</h1>
-        <ul>
-            <li>
-                <p>Insights based on <strong>39,441 developers</strong></p>
-            </li>
-        </ul>
+        <a class="logo" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Visit the IDB Group-Civil Society Review 2016-2017"><span>IDB Group-Civil Society Engagement Review 2016-2017</span></a>
+        <h1><em></em>IDB Group-Civil Society Engagement Review 2016-2017</h1>
         <p class="credit">
-            Code rendered 3D approximations<br>of Mandelbrot set by <a href="http://www.skytopia.com/project/fractal/mandelbulb.html" target="_blank" title="Visit Daniel's site">Daniel White</a>
+             Publication researched, created and<br> webpage developed by <a href="www.linkedin.com/in/viviane-espinoza" target="_blank" title="Visit Viviane's Linkedin">Viviane Espinoza</a>
         </p>
     </div>
 
-    <div class="section" id="fractal"></div>
-
+    <div class="section"></div>
     <div class="sub section" id="prologue">
-        <a class="logo" href="https://www.hackerrank.com">
-            <h4>HackerRank</h4>
+        <a class="logo" href="www.linkedin.com/in/viviane-espinoza">
+            <h4>VIVIANE ESPINOZA</h4>
         </a>
         <div class="half">
             <h4>Prologue</h4>
-            <h2>Hello World</h2>
+            <h2>A Changing Region</h2>
             <p>
-              The future of work will be very different. Irrespective of your job, it will become important for everyone
-              to learn how to code. Coding helps enrich your computational thinking, which is powerful in making
-              decisions. The traditional resume will go away and hiring will happen based on your skills first.<br><br>
+              The IDB Group is the leading development agency in Latin America and the Caribbean. Our focus is to improve the lives of citizens in Latin America and the Caribbean by continuously strengthen strategies and identifying new development trends. We at the IDB believe that the most important actors for development are Governments, Private Sectors and Civil Society.<br><br>
 
-              We launched <a href='https://www.hackerrank.com' target='_blank'>HackerRank</a> in late 2012 with the goal of matching every developer to the right job. And the growth
-              has been amazing — we reached 3.2M developers in the community and powered 2% of all developer hires last
-              year.<br><br>
+              Latin America and the Caribbean are changing. The region’s democracies have matured and its institutions are being modernized. Its citizens demand greater transparency and accountability. These changes have forged a new relationship between Governments, the Private Sector and Civil Society.<br><br>
 
-              For the first time, we surveyed the <a href='https://www.hackerrank.com' target='_blank'>HackerRank</a> community to get a pulse on developer skills (when did they push
-              code for the first time, how do they learn coding, what are the favorite languages and frameworks, what do they
-              want in a job, what hiring managers want in a candidate, and more).  There are some great insights, from
-              <strong>39,441 responses</strong>, that we are happy to share with you today. Did you know that 1 in 4 developers
-              learned to code before they could drive?<br><br>
+              With Civil Society the IDB Group works to contribute to the advancement of governments’ development agendas, support the best implementation of private sector initiatives, and strengthen civil society’s technical and participatory capacities. This second review of Civil Society activities remarks how Civil Society operates and conducts programs in 26 member countries through five strategic lines of action aimed at: a) strengthening and promoting capacities to access and generate information; b) fostering constructive dialogue to achieve shared-value agendas; c) strengthening capacities and instruments for due diligence in public consultations; d) identifying and supporting opportunities for collaboration that generate knowledge; e) leveraging partnerships to multiply resources and reach more beneficiaries.<br><br>
 
-              We hope you find the 2018 Developer Skills Report insightful and would love to discuss the findings with you
-              at <a href="http://hr.gs/reddit-discussion" target="_blank">/r/programming</a>.<br><br>
-            <img src="style/vivek-signature.png" width="50" height="60" alt="Yes, this is Vivek's signature" title="Yes, this is Vivek's signature"/><br>
-            <strong>Vivek Ravisankar</strong><br>
-            Co-founder &amp; CEO
+              Civil Society is one of the main actors towards development. The gradual involvement and strengthening of Civil Society has allowed citizens to become more aware of the importance of a true accountability. Therefore, a better and organized civil society is needed to allow citizens to be firmer in their demand for proper services and accountability for their leaders.<br><br>
+
+              This review constitutes a vital step to better understand Civil Society Engagement in the region. This work led by the Bank is indispensable to provide pertinent information needed for future endeavors. In this report, we will see the operations led by the Bank where Civil Society provides an indispensable step needed for future endeavors.<br><br>              
+
+              We hope you find the IDB-Civil Society Engagement Review 2016-2017 insightful and download the full report <a href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&locale-attribute=es&" target="_blank">here</a>.<br><br>
+            
+            <strong>Viviane Espinoza</strong><br>
+            Civil Society Programs Coordinator<br>
+            Vice Presidency for Countries (VPC)<br>
+            Inter-American Development Bank (IDB)
             </p>
         </div>
     </div>
 
     <div class="sub section" id="contents">
-        <div class="full">
+        <div class="half">
           <h2>Table of Contents</h2>
           <ul>
               <li><em>01</em> <a href="#prologue" class="scroll" title="Scroll to Prologue">Prologue</a></li>
-              <li><em>02</em> <a href="#insight1" class="scroll" title="Scroll to Learning & Education section">Learning &amp; Education</a></li>
-              <li class="sub"><a href="#insight1b" class="scroll" title="Scroll to this insight">The PC revolution sparked a unique ambition among ‘70s kids</a></li>
-              <li class="sub"><a href="#insight1d" class="scroll" title="Scroll to this insight">Nearly all developers have an insatiable thirst for learning</a></li>
-              <li><em>03</em> <a href="#insight2" class="scroll" title="Scroll to In-Demand Skills section">In-Demand Skills</a></li>
-              <li class="sub"><a href="#insight2b" class="scroll" title="Scroll to this insight">The biggest gap in knowledge is with JavaScript frameworks</a></li>
-              <li><em>04</em> <a href="#insight3" class="scroll" title="Scroll to In-Demand Qualifications section">In-Demand Qualifications</a></li>
-              <li class="sub"><a href="#insight3b" class="scroll" title="Scroll to this insight">What you do matters more than what’s on your resume</a></li>
-              <li class="sub"><a href="#insight3c" class="scroll" title="Scroll to this insight">Execs place the highest value on portfolios and personal projects</a></li>
-              <li><em>05</em> <a href="#insight4" class="scroll" title="Scroll to Developer Tools at Work section">Developer Tools at Work</a></li>
-              <li class="sub"><a href="#insight4b" class="scroll" title="Scroll to this insight">Languages: Python is the one</a></li>
-              <li class="sub"><a href="#insight4c" class="scroll" title="Scroll to this insight">Frameworks: Node.js is the newest jam</a></li>
-              <li><em>06</em> <a href="#insight5" class="scroll" title="Scroll to Talent Attraction section">Talent Attraction</a></li>
-              <li class="sub"><a href="#insight5b" class="scroll" title="Scroll to this insight">Work-life balance beats perks</a></li>
-              <li class="sub"><a href="#insight5c" class="scroll" title="Scroll to this insight">Flexible work schedules are huge</a></li>
-              <li><em>07</em> <a href="#insight6" class="scroll" title="Scroll to Just FYI section">Just FYI</a></li>
-              <li><em>08</em> <a href="#insight7" class="scroll" title="Scroll to Methodology section">Methodology</a></li>
+              <li><em>02</em> <a href="#insight1" class="scroll" title="Scroll to Acknowledgements">Acknowledgements</a></li>
+              <li><em>03</em> <a href="#insight2" class="scroll" title="Scroll to Introduction">Introduction</a></li>
+              <li><em>04</em> <a href="#insight3" class="scroll" title="Scroll to General IDB Group Review">General IDB Group Review</a></li>
+              <li><em>05</em> <a href="#insight4" class="scroll" title="Scroll to Review by Region">Insights and success stories by Region</a></li>
+              <li class="sub"><a href="#insight4" class="scroll" title="Scroll to this insight">CAN: Country Department Andean Group</a></li>
+              <li class="sub"><a href="#insight4" class="scroll" title="Scroll to this insight">CCB: Country Department Caribbean</a></li>
+              <li class="sub"><a href="#insight5" class="scroll" title="Scroll to this insight">CID: Country Department Central America, Mexico, Panama and Dominican Republic</a></li>
+              <li class="sub"><a href="#insight5" class="scroll" title="Scroll to this insight">CSC: Country Department Southern Cone</a></li>
+              <li><em>06</em> <a href="#insight6" class="scroll" title="Scroll to Methodology">Methodology</a></li>
           </ul>
         </div>
     </div>
-
     <div class="sub section" id="insight1">
         <div class="half">
-            <h4>Learning &amp; Education</h4>
-            <h2>1 in 4 developers started coding before they could drive</h2>
-            <p>It’s never too early &mdash; or too late! &mdash; to start coding. Of the roughly 39,000 developers surveyed across all professional levels, more than a quarter of&nbsp;developers wrote their first piece of code before they were 16 years old. <br><br>
-            Meanwhile, of all the developers who started coding after the age of 26, 36%&nbsp;are&nbsp;now senior or even higher-level developers, growing quickly in their careers.<br>
+            <h4>Acknowledgements</h4>
+            <h2>Our Thanks To...</h2>
+            <p>The Vice Presidency for Countries wishes to express its gratitude to all operating and sector specialists for their invaluable guidance and contributions during the preparation and completion of this review, to all experts on Civil Society from other Multilateral Development Entities for their ideas and exchanges, and to all Civil Society Organizations for their feedback and comments that have led to the materialization of this review.</p><br><br> 
+            <p>A special thank you for the information, suggestions, editing and most importantly the work, dedication and commitment of the IDB colleagues in the Headquarters and Civil Society Liaisons in 26 IDB Country Offices: Juana Alvarez Abad, Aleyda Montalvan, Alyssa Noble, Amrita Deonarine, Andrea Durango, Andreina Alvarez, Anna Beatriz Araujo, Dorri Agostini, Eduardo Daniel Arraiza, Emiliano Sanchez, Fiorella Salazar, Gevon Moss, Gladys Morena Gómez, Gloria Teresa Rojas, Hugo Amador Us Alvarez, Jennelle Thompson, Jennifer Linares, Kevin Rawle Bonnett, Leandro Gastón Andrian, Maria Delina Otazú, Mariana Vega, Michel Serge, Nadia Martinez Huezo, Natasja Deul, Paola A. Robles Alzamora, Sudaney Blair, Susana Castañeda Palacios, Yajaira Archibald.</p>
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=1 in 4 developers started coding before they could drive&url=https://research.hackerrank.com/developer-skills/2018/%23insight1&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight1&title=1%20in%204%20developers%20started%20coding%20before%20they%20could%20drive&summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills?%20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-      &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight1" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
             </p>
         </div>
         <div class="half second">
-            <h3>When did you start coding?</h3>
-            <div class="infogram-embed" data-id="ffbcc9c7-b43f-4b81-9baa-4dbfa6d93d80" data-type="interactive" data-title="learning01"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
+            <h3>Image Placeholder</h3>
+            <div class="ThanksImage">
+            <img src="http://via.placeholder.com/450x400" alt="Thanks" height="400" width="450">  
+            </div>
         </div>
+    </div>  
+      <div class="sub section" id="insight2">    
         <div class="half" id="insight1b">
-            <h4>Learning &amp; Education</h4>
-            <h2>The PC revolution sparked a&nbsp;unique ambition among ‘70s&nbsp;kids</h2>
-            <p>Unlike generations thereafter, if kids of the seventies wanted to see innovative technology, they’d have to build it themselves &mdash; they had no other choice. There were no widespread resources to teach them how to build software. Almost half of all developers (47%) between the ages of 45 and 54 started coding before they were 16&nbsp;years old. Meanwhile, developers between 18 and 24 today are the least likely to&nbsp;have started coding before 16 (only 20%).<br><br>
-            Developers between the ages of 45 and 54 were among the first to get their hands on relatively powerful PCs, like the Acorn Archimedes, TRS-80, Commodore 64, and Apple II. With limited to no access to formal education, young people in the PC Revolution had an unusually strong drive to learn to code on their own.<br>
+           <h4>Introduction</h4>
+            <h2>Scope, Reach & Impact</h2>
+            <p>This second review under the leadership of the Vice President for Countries, Alexandre Meira da Rosa, looks to clarify the scope, reach and impact of the work of the different Bank sectors, departments, divisions and units conduct with CS, as well as to optimize the use of resources available. These actions can be summarized in:<br><br> 
+            • Include CS as part of a set of innovative solutions for effectively addressing development challenges identified by the Bank by incorporating human capital with technically prepared Civil Society Organizations (CSO);
+            • Increase added value in a regional thematic roundtable in order to build knowledge during regional meetings, with a view to prepare common agendas on development challenges identified in the Region.<br><br>  
+            At a regional level, Civil Society Consultative Groups (ConSoc) continued to be strengthened in all 26 countries. These groups represent an invaluable network of collaboration and direct interaction with the Bank in the form of technical and territorial perspectives and experiences.<br><br>  
+            </p>
+        </div>
+
+        <div class="half second" id="insight2">
+            <h4></h4>
+            <h2></h2>
+            <br><p>Also, the annual regional meetings ‘’IDB Group–Civil Society Caribbean Forum’’ and ‘’IDB Group-Civil Society Regional Forum’’ were also reinforced and executed in Trinidad and Tobago and the Dominican Republic (2016) and in Jamaica and Bolivia (2017) and respectively. These meetings include the participation of CSO leaders, experts on different fields and sector, and Bank specialist to explore opportunities for joint solutions.<br><br>  
+            The previous considerations explain the need for a biennial review that helps to better understand the IDB Group’s level of engagement with Civil Society, draw lessons learned and to coordinate the Bank’s future actions. Note that the review supports and highlights the work of IDB Group Civil Society in each of the 26 borrowing member countries of the region: Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Chile, Colombia, Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Suriname, Trinidad and Tobago, Uruguay and Venezuela. 
+            <br>
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=The PC revolution sparked a unique ambition among ‘70s kids&url=https://research.hackerrank.com/developer-skills/2018/%23insight1b&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight1b
-              &title=The%20PC%20revolution%20sparked%20a%20unique%20ambition%20among%20%E2%80%9870s%20kids
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight1b" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
             </p>
         </div>
-        <div class="half second">
-            <h3>Current age vs. Age started coding</h3>
-            <div class="infogram-embed" data-id="d1d78cc4-4e1a-4ce0-97d9-ad42de355424" data-type="interactive" data-title="learning02"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-
-        <div class="half" id="insight1c">
-            <h4>Learning &amp; Education</h4>
-            <h2>Hats off to the UK for leading the pack for youngest coders</h2>
-            <p>Of the 17 countries represented in the survey with at least 100 respondents, the UK stands out with the highest share of developers who started coding as young as 5 to 10 years old. The majority of those developers are in their 30s and 40s today.<br><br>
-
-            When these developers were schoolyard kids, the Acorn Archimedes, a Cambridge-based PC, hit the scene. Thanks to a partnership with Tesco in which schools received these PCs in exchange for shopping at Tesco, more kids had access to&nbsp;computers. This initiative spread across Europe and Australia.<br><br>
-
-            Today, this culture of forward-thinking education has persisted in the UK — it&nbsp;became the first nation to modernize its curriculum by requiring kids as young as&nbsp;5 to take programming classes.<br><br>
-            Policymakers repeatedly cite that early exposure to coding is an important step in&nbsp;creating a gateway to careers in software and understanding the principles of&nbsp;computational thinking and software that influences daily life.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Hats off to the UK for leading the pack for youngest coders
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight1c&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight1c
-              &title=Hats%20off%20to%20the%20UK%20for%20leading%20the%20pack%20for%20youngest%20coders
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight1c" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-            </p>
-        </div>
-        <div class="half second">
-            <h3>Which country has the highest share of developers coding between 5 and 10?&nbsp;*</h3>
-            <div class="infogram-embed" data-id="50ed596c-5846-4ab6-861a-95b31dd62e64" data-type="interactive" data-title="learning03"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-            <p style="text-align:right">* List truncated</p>
-        </div>
-        <div class="half" id="insight1d">
-            <h4>Learning &amp; Education</h4>
-            <h2>Nearly all developers have an&nbsp;insatiable thirst for learning</h2>
-            <p>It seems like every year there’s a new hallmark programming language, framework or library that proliferates across developer blogs. First, it was all about Backbone.js. Now, everyone is raving about AngularJS and React. Self-teaching is&nbsp;the norm for developers of all ages. Even though 67% of developers have CS degrees, roughly 74% said they were at least partially self-taught.<br><br>
-            On average, developers know 4 languages, and they want to learn 4 more. The degree of thirst for learning varies by generations — young developers between 18 and 24 plan to learn 6 languages, whereas folks older than 35 only plan to learn 3.<br><br>
-            Since programming is centered on independent research aimed at solving new&nbsp;challenges, self-teaching is a major part of being a successful developer. In&nbsp;choosing what to learn next, the best guiding principle is to plant yourself in one discipline and learn tools as a means to grow. Tools will always change. Ultimately, it’s curiosity and genuine interest in programs that should fuel the drive to learn new tools and adapt to tech’s evolving landscape.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Nearly all developers have an insatiable thirst for learning
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight1d&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight1d
-              &title=Nearly%20all%20developers%20have%20an%20insatiable%20thirst%20for%20learning
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight1d" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
-        </div>
-        <div class="half second">
-            <h3>How did you learn to code?</h3>
-            <div class="infogram-embed" data-id="006baea6-c459-461a-afe8-b1f2d2aab652" data-type="interactive" data-title="learning04"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half" id="insight1e">
-            <h4>Learning &amp; Education</h4>
-            <h2>And new generations are opting for YouTube to self-teach over books</h2>
-            <p>Stack Overflow is the number one tool for self-learners — surprise :). This is true across age groups. Developers value step-by-step advice from peers who came, saw, and conquered challenges before them.<br><br>
-            There is, however, a clear age group divide between YouTube and books as the second favorite resource for learning to code. The very nature of learning is changing; younger generations are flocking to YouTube while older generations prefer books to learn new skills. More specifically, when learning a new tool, Millennials log onto YouTube (65%), while Gen Xers pick up a book (85%).<br><br>
-
-            Both have unique advantages. YouTube enables a systematic teaching paradigm, which allows for structured, steady progress that mimics university curriculums&hellip; except you can do it at your own pace. Another benefit is adaptability. While YouTube can ride the ebbs and flow of software’s agile advancements, textbooks are timeless relics of CS fundamentals. Anyone can produce a new YouTube tutorial in less than a day, though it won’t offer textbooks’ years of carefully thought out lessons. Either way, one thing is clear: We are on the cusp of an evolution in coding education.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=New generations are opting for YouTube to self-teach over books
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight1e&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight1e
-              &title=New%20generations%20are%20opting%20for%20YouTube%20to%20self-teach%20over%20books
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight1e" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
-        </div>
-        <div class="half second">
-            <h3>Besides <a href='https://www.hackerrank.com' target='_blank'>HackerRank</a>, which of these platforms do you use to learn how to code?</h3>
-            <div class="infogram-embed" data-id="28f554f5-90ca-4bb9-b059-63a6847b8af4" data-type="interactive" data-title="learning05"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-    </div>
-
-    <div class="sub section" id="insight2">
-        <div class="full">
-            <h4>In-Demand Skills</h4>
-            <h2>Developers are learning the languages employers are looking for most</h2>
-            <p>Even though new languages arise frequently, it’s most important for developers to master core, legacy languages. By and large, employers’ most common requirement today are: JavaScript, Java, Python, C++, and C.</p>
-            <h3>Which languages do employers look for by industry?</h3>
-            <div class="infogram-embed" data-id="845c0461-ed5c-4423-91a4-a24b88690193" data-type="interactive" data-title="indemandskills01"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>When you compare the most in-demand languages by employers with that of the most common languages that developers know, there is no gap. Java, JavaScript, C and C++, and Python all top the list of languages developers know.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Developers are learning the languages employers are looking for most
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight2&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight2
-              &title=Developers%20are%20learning%20the%20languages%20employers%20are%20looking%20for%20most
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight2" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-        </p>
-        </div>
-        <div class="half inside second">
-           <p>
-            There’s slight variation in the top in-demand languages by industry. Java, for instance, has been popular in the world of financial services for years. C dominates hardware because of its performance, direct low-level hardware API, and availability of compilers across many platforms. And C# is more common among government organizations.
-
-            </p>
-        </div>
-        <div class="full" id="insight2b">
-            <h4>In-Demand Skills</h4>
-            <h2>The biggest gap in knowledge is with JavaScript frameworks</h2>
-            <p>Programming languages aren’t adopted in the industry as quickly as they are created, but JavaScript is changing the game with its frameworks. A number of the most in-demand frameworks are JavaScript frameworks — it’s the only language versatile enough to build frontend, backend, mobile and browser extensions. Hence, JavaScript is ruling the web. Most often, employers want developers who know AngularJS, Node.js, and React.</p>
-            <h3>Which frameworks do employers need vs. developers know?</h3>
-            <div class="infogram-embed" data-id="5f53b4ba-6493-41ff-b3c2-f205a9495447" data-type="interactive" data-title="indemandskills02"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>
-            Incidentally, these 3 frameworks also have the biggest gap between what developers know and what employers want. React has the biggest delta between percentage of developers who know the framework and percentage of employers who look for candidates with this skillset. In other words, there’s a big opportunity for developers to learn React as a marketable skill that companies need today.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=The biggest gap in knowledge is with JavaScript frameworks
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight2b&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight2b
-              &title=The%20biggest%20gap%20in%20knowledge%20is%20with%20JavaScript%20frameworks
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight2b" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-            </p>
-        </div>
-        <div class="half second inside">
-            <p>
-            Part of the gaps in knowledge could be a byproduct of&nbsp;the fragmented nature of&nbsp;JavaScript. Its ecosystem is rapidly changing at a fast pace, and this may be why&nbsp;there’s a gap in knowledge on some JavaScript frameworks.
-            </p>
-        </div>
-
-    </div>
-
+      </div>
     <div class="sub section" id="insight3">
         <div class="half">
-            <h4>In-Demand Qualifications</h4>
-            <h2>Almost all employers prioritize problem-solving skills first</h2>
-            <p>Problem-solving skills are almost unanimously the most important qualification that employers look for….more than programming languages proficiency, debugging, and system design. Demonstrating computational thinking or the ability to break down large, complex problems is just as valuable (if not more so) than the baseline technical skills required for a job. <br><br>
-            There are, however, some nuances between what small companies care about most versus what large companies care about. For instance, smaller companies look for framework proficiency in candidates more than medium-sized to large companies.<br><br>
-            The difference may exist because having the right knowledge of frameworks is&nbsp;more important for startups since they need to launch code quickly, and frameworks help developers push code faster.<br>
+            <h4>General IDB Group Review</h4>
+            <h2>Overview of the LAC Region</h2>
+            <p>In 2016 and 2017, the IDB executed 537 operations with Civil Society in the five strategic levels of action: information, dialogues, consultations, collaboration and partnerships. The CAN region has had the highest number of collaboration. The CCB region represents the highest set of consultations and dialogues. The CID region has had the highest number of information actions and partnerships. The top thematic sectors throughout the five levels were: gender equality, energy, microenterprises, childhood and youth. <br><br>
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Almost all employers prioritize problem-solving skills first
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight3&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight3
-              &title=Almost%20all%20employers%20prioritize%20problem-solving%20skills%20first
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight3" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
-
             </p>
         </div>
         <div class="half second">
-            <h3>Which core competencies do employers look for?</h3>
-            <div class="infogram-embed" data-id="12635d22-2ccc-4743-946d-3318e00a8424" data-type="interactive" data-title="indemandqualifications01 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
+            <h3>Overall distribution of Engagement Levels at the IDB Group</h3>
+            <div class="chart" id="chart1">
+            </div>
         </div>
-        <div class="half" id="insight3b">
-            <h4>In-Demand Qualifications</h4>
-            <h2>What you do matters more than what’s on your resume</h2>
-            <p>There's a popular belief that recruiters favor candidates with CS degrees from prestigious universities. But it turns out that they actually care about what you've done &mdash; not where you went to school. An overwhelming majority of hiring managers said they look for proven skill, such as previous work, years of experience, and projects/GitHub. Regardless of company size, 9 out of 10 hiring managers say previous experience and years of experience &mdash; both indicators of&nbsp;skill &mdash; are among the most popular qualifications.<br><br>
-            What you do matters more than anything else. Small companies place a higher value on the portfolio: 80% versus 66% of large companies.<br><br>
-            Qualifications that generally bolster the resume (prestige of degree, education level, skill endorsements or certificates) rank the lowest among what companies care about the most. These factors are not indicative of proven skill. The only top-ranked qualification that's easily screenable from a resume is “years of experience” since work experience and portfolio are sometimes correlated with this qualifier. Since it’s more difficult to review individual portfolios at scale, years of experience is&nbsp;an&nbsp;alternative, resume-based signal for proven skill — although this completely neglects high performers who grew quickly in their roles.<br>
+</div>
+   <div class="sub section" id="insight4">
+        <div class="half">
+            <h4>Insights By Region</h4>
+            <h2>CAN: Country Department Andean Group</h2>
+            <p>The CAN region has the highest amount of partnerships and collaborations among the Latin American and Caribbean regions. </p>
+            <div class="chart" id="chart2">
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=What you do matters more than what’s on your resume
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight3b&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight3b
-              &title=What%20you%20do%20matters%20more%20than%20what%E2%80%99s%20on%20your%20resume
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight3b" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
 
-            </p>
         </div>
         <div class="half second">
-            <h3>What qualifications do employers look for by company size?</h3>
-            <div class="infogram-embed" data-id="4b4c5cbb-5697-4b7a-9beb-130803bd216c" data-type="interactive" data-title="indemandqualifications02"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half" id="insight3c">
-            <h4>In-Demand Qualifications</h4>
-            <h2>Execs place the highest value portfolios and personal projects</h2>
-            <p>Companies are looking at GitHub and projects to supplement resumes and evaluate skills better. When we filtered the data by roles, we found that those in a&nbsp;C-level positions, including founders, CTOs and VPs, valued GitHub projects more than years of experience. Prestige of degree dropped even further in importance for these folks.<br><br>
-            This could be attributed to the fact that by the time candidates meet execs, they’ve gotten to a point in the hiring process where interviewers are no longer looking for resume qualifiers. Most of the time, these C-level execs have recruiters or another teammate focus on resume-based proxies. When developers meet with C-level folks, there’s more time to evaluate proven skills based on projects, previous work, and portfolios.<br>
+            <h4>&nbsp;</h4>
+            <h2>CCB: Country Department Caribbean</h2>
+            <br><br><p>The CCB region represents the highest set of public consultations and dialogues.</p>
+            <div class="chart" id="chart3"></div>
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Execs place the highest value portfolios and personal projects
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight3c&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight3c
-              &title=Execs%20place%20the%20highest%20value%20portfolios%20and%20personal%20projects
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight3c" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
 
-            </p>
-        </div>
-        <div class="half second">
-            <h3>What qualifications do execs look for most?</h3>
-            <div class="infogram-embed" data-id="f8c8b8b5-733a-4c93-a6d6-8f3987a8e72f" data-type="interactive" data-title="indemandqualifications03"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
+
         </div>
     </div>
-    <div class="sub section" id="insight4">
-        <div class="full">
-            <h4>Developer Tools at Work</h4>
-            <h2>Developers flock to languages made popular by tech giants</h2>
-            <p>When we looked at the languages with the biggest gap between what developers don’t know and what they are looking to learn next: Go, Kotlin, Rust, Scala, and Swift ranked the highest. There’s a clear trend of individual developers’ following the lead of the Silicon Valley tech giants.</p>
-            <h3>Which languages are developers planning to learn next?</h3>
-            <div class="infogram-embed" data-id="b22df112-bfc6-4297-8dbe-983e0f5f7969" data-type="interactive" data-title="developertools01"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>Google’s Go offers high concurrency, fast compilation and, of course, widespread support from its creator. Google also spurred the use of Kotlin when it moved its canonical Android language away from Java.<br>
+</div>
+   <div class="sub section" id="insight5">
+        <div class="half">
+            <h4>Insights By Region</h4>
+            <h2>CID: Country Department Central America, Mexico, Panama and Dominican Republic</h2>
+            <p>The CID region has had the highest number of information and partnerships.</p>
+            <div class="ThanksImage">
+            <img src="http://via.placeholder.com/350x300" alt="CID Chart" height="300" width="350">  
+            </div>
             <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Developers flock to languages made popular by tech giants
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight4&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight4
-              &title=Execs%20place%20the%20highest%20value%20on%20GitHub%20and%20personal%20projects
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight4" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
 
-            </p>
-        </div>
-        <div class="half inside second">
-            <p>Additionally, when Twitter outgrew Ruby on Rails, the company shined a spotlight on scalable Scala as a more efficient and cost-effective alternative. Finally, when Apple moved away from Objective-C to Swift, developers had to switch too. With iOS development becoming more streamlined and increasingly accessible, it’s clear many developers don’t want to be left behind.
-            </p>
-        </div>
-
-        <div class="full" id="insight4b">
-            <h4>Developer Tools at Work</h4>
-            <h2>Python is the one</h2>
-            <p>JavaScript may be the most in-demand language by employers, but Python wins the heart of developers across all ages, according to our Love-Hate index. Python is also the most popular language that developers want to learn overall, and a significant share already knows it.
-            </p>
-            <h3>Which languages do developers prefer by age?</h3>
-            <p><em>The language preference graph is based on a Love-Dislike Index, which takes the % of developers who love a language and subtracts the % of developers who dislike the same language. This helps us determine the positive or negative sentiment of a given programming language or framework. Where a score of 100%=most loved and a score of -100%=most disliked.</em><br>&nbsp;
-            </p>
-            <div class="infogram-embed" data-id="c730c4bf-57bd-4370-a234-257df90f2e5b" data-type="interactive" data-title="developertools02 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>Python is known for its simplicity, readability, and vast possibilities of scientific libraries. It’s also growing as part of introductory computer science courses.<br><br>
-            There is an unusual generational trend among newer languages: Younger developers dislike newer languages (like Go, Kotlin, and Scala) more so than older developers. In fact, Go creates one of the greatest divides. Developers aged 18-24 don’t care for it, but 45-54 year-olds consider it one of their most loved languages. The inverse is true about JavaScript.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Python is the one
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight4b&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight4b
-              &title=Python%20is%20the%20one
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight4b" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
-        </div>
-        <div class="half inside second">
-            <p>This is interesting, since many of the newer languages, including Go, embody learnings from older languages. One of Go’s primary designers created C decades ago. There’s an innate thirst for knowledge among younger developers. They are more likely to learn languages across the board &mdash; even those that they dislike &mdash; than older developers. The latter would choose their pursuit more selectively, based on their experience and what they think will stand the test of time.
-            </p>
-        </div>
-        <div class="full" id="insight4c">
-            <h4>Developer Tools at Work</h4>
-            <h2>Node.js is the newest jam</h2>
-            <p></p>
-            <h3>Which frameworks do developers prefer by age?</h3>
-            <p><em>The language preference graph is based on a Love-Dislike Index, which takes the % of developers who love a language and subtracts the % of developers who dislike the same language. This helps us determine the positive or negative sentiment of a given programming language or framework. Where a score of 100%=most loved and a score of -100%=most disliked.</em><br>&nbsp;
-            </p>
-            <div class="infogram-embed" data-id="7c02c7c2-b681-4232-8f10-712cb6d58a8c" data-type="interactive" data-title="developertools03"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>Node.js wins as most loved framework by the largest share of developers. As the only method for backend JavaScript, Node.js is favored across all ages. As for front-end frameworks, we all know that AngularJS and React are in vogue. But it turns out this love is most common among younger generations.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Node.js is the newest jam&url=https://research.hackerrank.com/developer-skills/2018/%23insight4c&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight4c
-              &title=Node.js%20is%20the%20newest%20jam
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight4c" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
-        </div>
-        <div class="half inside second">
-            <p>Developers between 45-54 years old ranked AngularJS and React much lower. On the other hand, the exact inverse is true about Vue.js. It’s not immediately clear why this is true. We’d love to learn thoughts from Vue.js developers on the differences in age <a href="http://hr.gs/reddit-discussion" target="_blank">/r/programming</a>.
-            </p>
-        </div>
-
-    </div>
-
-    <div class="sub section" id="insight5">
-        <div class="full">
-            <h4>Talent Attraction</h4>
-            <h2>Assessing skills proves to be the biggest hiring challenge, more than talent shortage</h2>
-        </div>
-        <div class="half inside">
-            <h3 class="inside">What’s the biggest challenge when hiring talent?</h3>
-            <div class="infogram-embed" data-id="93297acf-c37e-4bab-93fb-3e0d4193a1bb" data-type="interactive" data-title="talent01 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half second inside">
-            <h3 class="inside">Which assessment tools do employers use most?</h3>
-            <div class="infogram-embed" data-id="c3637f6a-cc35-473f-a3d8-1784524de287" data-type="interactive" data-title="talent02 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>According to 7,000+ employers, resumes are still by far the most common way developers are assessed today. Our survey found that 81% of hiring managers use resumes as the first step in the applicant screening process.<br><br>
-            When asked what the biggest hiring challenge is, the same hiring managers said assessing skill is their number one problem — as opposed to lack of talent. Meanwhile, only 55% of developers said resumes were a good reflection of their abilities.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Assessing skills proves to be the biggest hiring challenge, more than talent shortage
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight5&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight5
-              &title=Assessing%20skills%20proves%20to%20be%20the%20biggest%20hiring%20challenge%2C%20more%20than%20talent%20shortage
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight5" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
-        </div>
-        <div class="half inside second">
-            <p>While technical hiring managers still primarily rely on the resume to evaluate software developers as the first step of the interview, almost all agree that assessing skill is one of the hardest challenges when filling technical roles &mdash; there’s a mismatch in what they’re looking for and the tools they’re using to evaluate it. Screening with resumes is a barrier for hiring managers to find the proven skill because the factors that hiring managers care most about (proven skills) are not screenable from resumes.
-            </p>
-        </div>
-        <div class="full" id="insight5b">
-            <h4>Talent Attraction</h4>
-            <h2>Work-life balance beats perks</h2>
-            <h3>What do developer candidates want most when job searching?</h3>
-            <div class="infogram-embed" data-id="2da98b57-a3b6-4c13-aa44-842521d9cf89" data-type="interactive" data-title="talent03 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
-        <div class="half inside">
-            <p>If you look at any typical career page for technology job descriptions, hiring managers commonly highlight tech stack, mission statement, and perks to entice developers to apply. This is not what hiring managers should be focusing on when competing for talent. <br><br>
-
-            Instead, the number one thing that developers want most above all is a strong work-life balance. Developers ranked work-life balance as the most desired trait, slightly more than professional growth and learning, which came in second. More specifically, the Americans crave work-life balance more than developers in other regions like Asia and Europe.<br><br>
-
-            Though it was ranked less important to people working at smaller companies, it was still in the top three. Work-life balance is most important to developers 25 years and older, and — unsurprisingly &mdash; ranked less important to&nbsp;developers between 18 and 24.<br>
-
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Work-life balance beats perks
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight5b&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight5b
-              &title=Work-life%20balance%20beats%20perks
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight5b" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-            </p>
-        </div>
-        <div class="half inside second">
-            <p>Geographically, the distinctions aren’t too major, with a few exceptions. Canadians care most about compensation, while Australians cite company culture as the #1 thing they care about in a job.
-            <br><br>
-            In some ways, we’ve discovered a slight contradiction here. Developers want work-life balance but they also have an insatiable thirst and need for learning. In fact, the number of new tools to learn can sometimes feel overwhelming for developers. But the best fuel for learning is curiosity and genuine interest in technologies that develop in your domain. Focusing on doing what you enjoy (as opposed to trying to&nbsp;learn everything) can help strike a better work-life balance.
-            </p>
-        </div>
-
-        <div class="half" id="insight5c">
-            <h4>Talent Attraction</h4>
-            <h2>Flexible work schedules are huge</h2>
-            <p>We realize work-life balance could mean a lot of things to different people. So, we dug a bit deeper into what developers really want.<br><br>
-            By and large, work-life balance can be supported with flexible hours — 10 am to 8 pm schedules are commonplace. <br><br>
-            Developers want to work for managers that focus on output, not time spent in the office chair. And telecommuting options are helpful as well. Remote working is a particularly strong desire for developers 25 and older, and folks between 25 - 44 are the strongest proponents of shutting down email after hours.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Flexible work schedules are huge
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight5c&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight5c
-              &title=Flexible%20work%20schedules%20are%20huge
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight5c" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-            </p>
         </div>
         <div class="half second">
-            <h3>How can employers improve work-life balance?</h3>
-            <div class="infogram-embed" data-id="34b78fe9-4ade-4c39-a201-5efa27d594d6" data-type="interactive" data-title="talent04 - sliders"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-        </div>
+            <h4>&nbsp;</h4>
+            <h2>CSC: Country Department Southern Cone</h2>
+            <br><br><p>The CSC has had the second highest number of partnerships in the region. The most predominant product type is the provision of funds to execute projects or  project’s components. Brasil is the highest executing country in the partnership level.</p>
+            <div class="ThanksImage">
+            <img src="http://via.placeholder.com/350x300" alt="CSC Chart" height="300" width="350">  
+            </div>
+              <div class="share">
+            <a class="twitter" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Tweet about the IDB Group-Civil Society Engagement Review 2016-2017" target="_blank"><span>Tweet</span></a>
 
-        <div class="half" id="insight5d">
-            <h4>Talent Attraction</h4>
-            <h2>For students, professional growth is the most important</h2>
-            <p>Professional growth climbs to the number one thing students look for in a job, and compensation also notably drops from #3 for professionals to #7 for students. Work-life balance is still important to students, though it drops from number one to&nbsp;number two.<br><br>
-            Students are eager to learn and reach their potential, hence prioritizing work-life balance lower at this point in their careers.<br><br>
-            Meanwhile, professionals’ desire for work-life balance &mdash; over compensation &mdash; goes to show you how hands-on experience opens people’s eyes to the industry. Sometimes, it pays to gain a little time to yourself, flexibility and overall mental balance.<br>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=For students, professional growth is the most important
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight5d&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
+            <a class="linkedin" href="https://www.linkedin.com/in/viviane-espinoza/detail/treasury/position:506989882/?entityUrn=urn%3Ali%3Afs_treasuryMedia%3A(ACoAAATG_LQBpjwG4oO-vHBwhK1-M_Q2iOtDK7I%2C51076195)" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Linkedin" target="_blank"><span>Share</span></a>
 
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight5d
-              &title=For%20students%2C%20professional%20growth%20is%20the%20most%20important
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight5d" title="Share on Facebook" target="_blank">Share</a>
+            <a class="facebook" href="https://publications.iadb.org/handle/11319/7496?locale-attribute=en&" title="Share the IDB Group-Civil Society Engagement Review 2016-2017 on Facebook" target="_blank"><span>Like</span></a>
             </div>
 
-            </p>
-        </div>
-        <div class="half second">
-            <h3>What are the best ways that employers could help support a healthy work-life balance for you?</h3>
-            <div class="infogram-embed" data-id="0cf5d54c-f6fd-4e03-a07a-f0160966225e" data-type="interactive" data-title="talent05"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
+
         </div>
     </div>
+</div>
 
     <div class="sub section" id="insight6">
         <div class="half">
-            <h4>Just FYI</h4>
-            <h2>VIM for the win</h2>
-            <p>VIM beats all other editors by a landslide. Fans say its powerful keyboard commands are a crucial component of why it’s loved by developers everywhere.</p>
-            <h3 class="inside">VIM or Emacs?</h3>
-            <div class="infogram-embed" data-id="0f541a49-e38b-4f47-b168-be470f4b2eca" data-type="interactive" data-title="justforfun1"></div>
-            <script>
-                ! function(e, t, s, i) {
-                    var n = "InfogramEmbeds",
-                        o = e.getElementsByTagName("script"),
-                        d = o[0],
-                        r = /^http:/.test(e.location) ? "http:" : "https:";
-                    if (/^\/{2}/.test(i) && (i = r + i), window[n] && window[n].initialized) window[n].process && window[n].process();
-                    else if (!e.getElementById(s)) {
-                        var a = e.createElement("script");
-                        a.async = 1, a.id = s, a.src = i, d.parentNode.insertBefore(a, d)
-                    }
-                }(document, 0, "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");
-            </script>
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=VIM for the win
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight6&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight6
-              &title=VIM%20for%20the%20win
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight6" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-        </div>
-        <div class="half second">
-            <h4>&nbsp;</h4>
-            <h2>Founders are 3x more likely to&nbsp;have coded before&nbsp;10</h2>
-            <p>15% of founders began coding before they were 11 vs. 5% of those in other roles.</p>
-            <h3 class="inside">Began coding at age 5&nbsp;to&nbsp;10</h3>
-            <div class="infogram-embed" data-id="683998c4-76e2-4d60-b535-638f28b04eaf" data-type="interactive" data-title="justforfun2"></div><script>!function(e,t,s,i){var n="InfogramEmbeds",o=e.getElementsByTagName("script"),d=o[0],r=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(i)&&(i=r+i),window[n]&&window[n].initialized)window[n].process&&window[n].process();else if(!e.getElementById(s)){var a=e.createElement("script");a.async=1,a.id=s,a.src=i,d.parentNode.insertBefore(a,d)}}(document,0,"infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script>
-
-            <div class="share">
-              <a class="twitter" href="http://twitter.com/share?text=Founders are 3x more likely to have coded before 10
-              &url=https://research.hackerrank.com/developer-skills/2018/%23insight6&hashtags=devskillsreport2018,hackerrankresearch" title="Tweet" target="_blank">Tweet</a>
-
-              <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://research.hackerrank.com/developer-skills/2018/%23insight6
-              &title=Founders%20are%203x%20more%20likely%20to%20have%20coded%20before%2010
-              &summary=What%20is%20the%20state%20of%20developer%20skills%20today?%20How%20can%20developers%20best%20keep%20their%20skills%20current?%20What%20are%20the%20most%20in-demand%20skills %20Find%20out%20in%20the%20HackerRank’s%20Developer%20Skills%20Report%20with%20more%20than%2039,000%20responses.
-              &source=HackerRank.com" title="Share on Linkedin" target="_blank">Share</a>
-
-              <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://research.hackerrank.com/developer-skills/2018/#insight6" title="Share on Facebook" target="_blank">Share</a>
-            </div>
-
-
-        </div>
-    </div>
-
-    <div class="sub section" id="insight7">
-        <div class="half">
-            <h4>Appendix</h4>
-            <h2>Tune in with HackerRank</h2>
-            <p>We just launched a new podcast! Introducing HackerRank Radio, a podcast for engineering leaders interested in learning the latest solutions to solve one of developers’ toughest problems today: Hiring the right developers.
-            <br><br>
-            <a class="subscribe" href="https://radio.hackerrank.com"
-            title="Listen to HackerRank Radio" target="_blank">
-              <img src="style/hackerrank_radio.png" width="242" height="60" alt=""/></a><br>
-
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fresearch.hackerrank.com%2Fdeveloper-skills%2F2018%2F&width=204&layout=button_count&action=recommend&size=large&show_faces=true&share=true&height=46" width="204" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false"></iframe><br>
-            Want to discuss the findings? Join the conversation at <a href="http://hr.gs/reddit-discussion" target="_blank">/r/programming</a>.
-
-          </p>
-        </div>
-        <div class="half second">
-            <h4>&nbsp;</h4>
-            <h2 class="clean">Methodology</h2>
-            <p><a href='https://www.hackerrank.com' target='_blank'>HackerRank</a> conducted a study of developers to identify trends in developer education, skills and hiring practices. A total of 39,441 professional and student developers completed the online survey from October 16 to November 1, 2017. The survey was hosted by SurveyMonkey and <a href='https://www.hackerrank.com' target='_blank'>HackerRank</a> recruited respondents via email from their community of 3.2 million members and through social media sites.<br><br>
-            Tests of significant differences were conducted at the .01 level (99% probability that the difference is real, not by chance). Percentages may not always add to 100% due to rounding.
+            <h4>Methodology</h4>
+            <h2 class="clean">About The Report</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut nisl ac ipsum fermentum euismod in varius neque. Vestibulum vitae purus sed urna facilisis pretium quis in eros. Nullam ac odio in augue tincidunt consectetur. Aenean quis justo mollis, mattis risus non, venenatis felis. Pellentesque a pellentesque elit. Nam at placerat nisl. Curabitur suscipit ex sit amet porttitor malesuada. Etiam pulvinar, eros vel viverra lobortis, ligula nulla elementum quam, at gravida nunc tellus sed tortor. Etiam finibus lacus in interdum aliquet. Aenean eu consequat mi, at mattis turpis. Morbi eleifend pulvinar suscipit.
             </p>
         </div>
     </div>
 
     <div class="sub section" id="footer">
         <div class="half">
-            <a class="logo" href="https://www.hackerrank.com" title="Visit HackerRank.com"><span>HackerRank</span></a>
+            <a class="logo" href="www.linkedin.com/in/viviane-espinoza" title="Viviane Espinoza"><span>Viviane Espinoza</span></a>
             <p>
-              <a href="mailto:research@hackerrank.com" target="_blank" title="Send us an email">research@hackerrank.com</a><br>
-              (415) 900-4023<br>
-              <em>&copy; 2018 HackerRank</em>
+              <a href="mailto:viespinoza@gmail.com" target="_blank" title="Send us an email">viespinoza@gmail.com</a><br>
+              (202) 279-0605<br>
+              <em>&copy; 2018 Viviane Espinoza</em>
             </p>
         </div>
         <div class="half second">
-            <p>HackerRank&#39;s mission is to match every developer to the right job. We’re driving a new paradigm shift by helping companies evaluate technical skills better and creating opportunities for millions of programmers worldwide. 1,000 companies across industries, including VMware, Twitter and Capital One, use HackerRank to build strong engineering teams.
-            <a href="https://www.hackerrank.com/" target="_blank" title="Visit HackerRank website">www.hackerrank.com</a>
-            </p>
+            <p>This publication highlights the work that the different IDB Group's sectors, departments, divisions and units conduct with Civil Society through five strategic levels of engagement: information, dialogue, consultation, collaboration and partnerships. This is the second review that the IDB Group undertakes on engagement actions with civil society in 26 countries of Latin America and the Caribbean.</p>
         </div>
     </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <script src="style/index.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45092266-12"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-45092266-12');
-</script>
+<script src="index.js"></script>
 
 </body>
 
