@@ -50,7 +50,47 @@ var chart = c3.generate({
         type : 'donut'
     },
     donut: {
-        title: "CAN Region",
+        title: "CCB Region",
     }
 });
+
+
+var chart = c3.generate({
+    bindto: '#chart4',
+    data: {
+        columns: [
+            ['Information', 13],
+            ['Dialogue', 28],
+            ['Consultations', 31],
+            ['Collaboration', 10],
+            ['Partnership', 16],
+
+        ],
+        type : 'donut'
+    },
+    donut: {
+        title: "CID Region",
+    }
+});
+
+var chart = c3.generate({
+    bindto: '#chart5',
+    data: {
+        columns: [
+            ['Information', 5],
+            ['Dialogue', 15],
+            ['Consultations', 14],
+            ['Collaboration', 19],
+            ['Partnership', 47],
+
+        ],
+        type : 'donut'
+    },
+    donut: {
+        title: "CSC Region",
+    }
+});
+
+
+
 });    
